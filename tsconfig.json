@@ -1,19 +1,81 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "allowJs": false,
+    "jsx": "preserve",
+    "removeComments": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@root/*": [
+        "./*"
+      ],
+      "@src/*": [
+        "./src/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@contexts/*": [
+        "./src/common/contexts/*"
+      ],
+      "@misc/*": [
+        "./src/common/misc/*"
+      ],
+      "@styles/*": [
+        "./src/common/styles/*"
+      ],
+      "@hooks/*": [
+        "./src/common/hooks/*"
+      ],
+      "@store/*": [
+        "./src/common/store/*"
+      ],
+      "@constants/*": [
+        "./src/common/constants/*"
+      ],
+      "@components/*": [
+        "./src/common/components/*"
+      ],
+      "@language/*": [
+        "./src/common/language/*"
+      ],
+      "@features/*": [
+        "./src/features/*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "jest.config.js",
+    "index.js"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }

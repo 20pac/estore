@@ -48,15 +48,5 @@ module.exports = {
     ],
     ["@babel/plugin-proposal-private-methods", { loose: true }],
     "@babel/plugin-proposal-object-rest-spread",
-    [
-      "babel-plugin-import",
-      {
-        libraryName: "@material-ui/core",
-        // Use ""libraryDirectory": ""," if your bundler does not support ES modules
-        libraryDirectory: "",
-        camel2DashComponentName: false,
-      },
-      "core",
-    ],
   ],
 };

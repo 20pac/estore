@@ -9,16 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "@types/humps": "^2.0.1",
-    "@types/i18n-js": "^3.8.2",
-    "apisauce": "^2.1.2",
-    "date-fns": "^2.24.0",
-    "humps": "^2.0.1",
-    "i18n-js": "^3.8.0",
+    "@artsy/fresnel": "^3.1.0",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-responsive-carousel": "^3.2.22"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.14.5",
@@ -32,6 +27,7 @@
     "@types/react": "17.0.26",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
+    "autoprefixer": "^10.4.0",
     "babel-plugin-import": "^1.13.3",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "7.32.0",
@@ -41,7 +37,9 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "postcss": "^8.4.3",
     "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19",
     "typescript": "4.4.3"
   }
 }

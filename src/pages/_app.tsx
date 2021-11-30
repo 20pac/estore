@@ -1,11 +1,9 @@
+import "@src/styles.css";
+
 import React, { FC, useEffect } from "react";
 
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { ThemeProvider } from "@material-ui/core/styles";
 import { AppProps } from "next/app";
 import Head from "next/head";
-
-import { lightTheme } from "../common/styles/global-theme";
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -22,10 +20,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         <title>Studyroom</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
-      <ThemeProvider theme={lightTheme}>
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Component {...pageProps} />
     </>
   );
 };

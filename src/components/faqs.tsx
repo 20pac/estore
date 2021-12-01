@@ -66,7 +66,7 @@ const Faqs = () => {
 
       <Accordion
         question="7. What are the payment options available?"
-        answer="Haven't all of our schools and colleges till date been a community, our best friends are from our schools and colleges we attended? We all start with the same purpose (degree), the same group of people (cohort) and have a fixed time duration to complete courses. Online cohort-based courses have a community component built-in which helps them drive a superior learning experience, new connections and friendships for participants which could potentially unlock new opportunities for them."
+        answer="We support Credit Card, Debit Card, UPI, and Credit Card based EMIs having a duration of 3 months, 6 months, 12 months, and 24 months as offered by Razorpay."
       />
     </div>
   );

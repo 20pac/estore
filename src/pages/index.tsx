@@ -23,6 +23,7 @@ import {
   PricingSectionMobile,
   TestimonialsSection,
   WhatBuild,
+  WhatBuildMobile,
   WhyCbcSection,
   WhyCbcSectionMobile,
 } from "@src/components";
@@ -59,6 +60,7 @@ const Home: NextPage = () => {
           <MakeStuffSectionMobile />
           <OnlineCourseSuckSectionMobile />
           <WhyCbcSectionMobile />
+          <WhatBuildMobile />
           <LearningJourneyMobile />
           <PricingSectionMobile />
           <TestimonialsSection />
@@ -74,7 +76,7 @@ const Home: NextPage = () => {
                 Worldschool
               </h2>
             </div>
-            <p className="text-small mt-4 text-extraSmall">Invest in your career.</p>
+            <p className="text-small text-blue mt-4 text-extraSmall">Invest in your career.</p>
             <p className="my-6 text-mini">Copyright © 2021 Worldschool. All rights reserved.</p>
           </div>
         </div>

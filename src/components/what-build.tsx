@@ -36,4 +36,33 @@ export const WhatBuild = () => (
   </div>
 );
 
-export const WhatBuildMobile = () => {};
+export const WhatBuildMobile = () => (
+  <div className="mt-8 sm:px-6">
+    <div>
+      <h1 className="font-bold text-small mb-5">
+        What you&apos;ll{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-br from-three to-four">build.</span>
+      </h1>
+      <p className="text-extraSmall font-bold mb-6">The Big Project - Building a music streaming app!</p>
+      <div>
+        <div className="my-5">
+          <Image src={WhatBuildGraphic} className="rounded-xl" />
+        </div>
+      </div>
+      <div>
+        <div className="text-mini mb-3 flex items-center">
+          <Image src={CheckmarkIcon} width={15} />{" "}
+          <span className="ml-4">Find all your favourite artists and stream their music</span>
+        </div>
+        <div className="text-mini mb-3 flex items-center">
+          <Image src={CheckmarkIcon} width={15} />{" "}
+          <span className="ml-4">Check out your friends&apos; playlists and share your own</span>
+        </div>
+        <div className="text-mini mb-3 flex items-center">
+          <Image src={CheckmarkIcon} width={15} />{" "}
+          <span className="ml-4">Share your favourite songs with friends and listen together</span>
+        </div>
+      </div>
+    </div>
+  </div>
+);

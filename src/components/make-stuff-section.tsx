@@ -15,34 +15,34 @@ export const MakeStuffSection = () => (
       A new kind of online university, focused on helping you build a network, learn new skills and get hands-on
       experience!
     </p>
-    <div className="flex flex-row justify-center flex-wrap gap-5 xl:gap-6">
-      <div className="flex flex-col items-center w-11 h-15 bg-gradient-to-br from-ten to-eleven rounded-md px-4 py-6">
+    <div className="flex flex-row justify-center flex-wrap gap-4 1161:gap-5 xl:gap-6">
+      <div className="flex flex-col items-center w-10 h-450 1161:w-11 1161:h-15 bg-gradient-to-br from-ten to-eleven rounded-md px-4 py-6">
         <div style={{ width: "200px" }}>
           <Image src={RocketIcon} />
         </div>
-        <h2 className="self-start text-medium xl:text-large text-white font-bold mt-6">Explore &</h2>
-        <h2 className="self-start text-medium xl:text-large text-white font-bold">launch ideas</h2>
-        <p className="text-extraSmall xl:text-small text-white mt-1">
+        <h2 className="self-start text-small 1161:text-medium xl:text-large text-white font-bold mt-6">Explore &</h2>
+        <h2 className="self-start text-small 1161:text-medium xl:text-large text-white font-bold">launch ideas</h2>
+        <p className="text-mini 1161:text-extraSmall xl:text-small text-white mt-1">
           Discuss ideas with peers and industry experts and execute them.
         </p>
       </div>
-      <div className="flex flex-col items-center w-11 h-15 bg-gradient-to-br from-twelve to-thirteen rounded-md px-4 py-6">
+      <div className="flex flex-col items-center w-10 h-450 1161:w-11 1161:h-15 bg-gradient-to-br from-twelve to-thirteen rounded-md px-4 py-6">
         <div style={{ width: "200px" }}>
           <Image src={EarthIcon} />
         </div>
-        <h2 className="self-start text-medium xl:text-large text-white font-bold mt-6">Build deep</h2>
-        <h2 className="self-start text-medium xl:text-large text-white font-bold">connections</h2>
-        <p className="text-extraSmall xl:text-small text-white mt-1">
+        <h2 className="self-start text-small 1161:text-medium xl:text-large text-white font-bold mt-6">Build deep</h2>
+        <h2 className="self-start text-small 1161:text-medium xl:text-large text-white font-bold">connections</h2>
+        <p className="text-mini 1161:text-extraSmall xl:text-small text-white mt-1">
           Connect with other students, industry experts and build your network.
         </p>
       </div>
-      <div className="flex flex-col items-center w-11 h-15 bg-gradient-to-br from-fourteen to-fifteen rounded-md px-4 py-6">
+      <div className="flex flex-col items-center w-10 h-450 1161:w-11 1161:h-15 bg-gradient-to-br from-fourteen to-fifteen rounded-md px-4 py-6">
         <div style={{ width: "160px" }}>
           <Image src={NotepadIcon} />
         </div>
-        <h2 className="self-start text-medium xl:text-large text-white font-bold mt-6">Learn & grow</h2>
-        <h2 className="self-start text-medium xl:text-large text-white font-bold">rapidly</h2>
-        <p className="text-extraSmall xl:text-small text-white mt-1">
+        <h2 className="self-start text-small 1161:text-medium xl:text-large text-white font-bold mt-6">Learn & grow</h2>
+        <h2 className="self-start text-small 1161:text-medium xl:text-large text-white font-bold">rapidly</h2>
+        <p className="text-mini 1161:text-extraSmall xl:text-small text-white mt-1">
           Save time and learn faster, straight from the industry experts.
         </p>
       </div>

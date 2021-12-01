@@ -17,12 +17,19 @@ export const HeroSection = () => {
         </h1>
         <h1 className="font-bold 1440:text-largest xl:text-54 text-larger">from industry experts</h1>
         <p className="italic 1440:text-large xl:text-medium font-light text-24 my-6">
-          Next cohort starts 3rd Jan 2022.
+          Next cohort starts 8th Jan 2022.
         </p>
         <div className="absolute top-10 pointer-events-none z-10">
           <Image src={BlurGraphic} className="absoluteImage" />
         </div>
-        <button className="text-extraSmall py-3 px-5 text-white rounded-lg bg-gradient-to-r from-two to-one">
+        <button
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
+              "_blank",
+            )
+          }
+          className="text-extraSmall py-3 px-5 text-white rounded-lg bg-gradient-to-r from-two to-one">
           Register now
         </button>
       </div>
@@ -49,8 +56,15 @@ export const HeroSectionMobile = () => {
         <div className="my-5">
           <Image src={LaptopGraphic} />
         </div>
-        <p className="italic text-extraSmall my-5">Next cohort starts 3rd Jan 2022.</p>
-        <button className="shadow-xl text-mini py-2 px-3 text-white rounded-lg bg-gradient-to-r from-two to-one">
+        <p className="italic text-extraSmall my-5">Next cohort starts 8th Jan 2022.</p>
+        <button
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
+              "_blank",
+            )
+          }
+          className="shadow-xl text-mini py-2 px-3 text-white rounded-lg bg-gradient-to-r from-two to-one">
           Register now
         </button>
       </div>

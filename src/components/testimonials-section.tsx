@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 
 import NextArrow from "@public/assets/next-arrow.svg";
+import PrevArrow from "@public/assets/prevArrow.svg";
 import User1Image from "@public/assets/user1.png";
 import User2Image from "@public/assets/user2.png";
 import User3Image from "@public/assets/user3.png";
@@ -39,7 +40,7 @@ const TestimonialsSection = () => {
     return (
       hasNext && (
         <button
-          className="shadow-2xl flex justify-center items-center rounded-full w-5 bg-white h-5 absolute z-50 top-180 right-1"
+          className="shadow-2xl flex justify-center items-center rounded-full w-5 bg-white h-5 absolute z-50 top-180 right-1 transform"
           onClick={_onClickHandler}>
           <Image src={NextArrow} />
         </button>
@@ -53,7 +54,7 @@ const TestimonialsSection = () => {
         <button
           className="shadow-2xl rounded-full w-5 bg-white h-5 absolute z-50 bg-white top-180 left-1"
           onClick={_onClickHandler}>
-          <Image src={NextArrow} />
+          <Image src={PrevArrow} />
         </button>
       )
     );

@@ -2,7 +2,6 @@ import React from "react";
 
 import Image from "next/image";
 
-import BlurIcon from "@public/assets/blur-2.svg";
 import CheckmarkIcon from "@public/assets/chemark-icon.svg";
 
 export const PricingSection = () => (
@@ -36,7 +35,14 @@ export const PricingSection = () => (
               <Image src={CheckmarkIcon} width={24} /> <span className="ml-4">You want to be future ready</span>
             </li>
           </ul>
-          <button className="mt-6 text-extraSmall py-3 px-5 text-white rounded-lg bg-gradient-to-r from-two to-one">
+          <button
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
+                "_blank",
+              )
+            }
+            className="mt-6 text-extraSmall py-3 px-5 text-white rounded-lg bg-gradient-to-r from-two to-one">
             Register now
           </button>
         </div>
@@ -49,11 +55,6 @@ export const PricingSection = () => (
       <p className="mt-4 text-textLight self-start">
         No Cost EMI on all major credit cards & No cost Cardless EMI* 7-day money back Guarantee
       </p>
-    </div>
-    <div className="absolute md:right-1 1440:right-11 z-0">
-      <div className="relative top-9 right-9">
-        <Image src={BlurIcon} />
-      </div>
     </div>
   </div>
 );
@@ -100,7 +101,14 @@ export const PricingSectionMobile = () => (
               <span className="ml-4">You want to be future ready</span>
             </div>
           </div>
-          <button className="mt-6 shadow-xl text-mini py-2 px-3 text-white rounded-lg bg-gradient-to-r from-two to-one">
+          <button
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
+                "_blank",
+              )
+            }
+            className="mt-6 shadow-xl text-mini py-2 px-3 text-white rounded-lg bg-gradient-to-r from-two to-one">
             Register now
           </button>
         </div>
@@ -108,11 +116,6 @@ export const PricingSectionMobile = () => (
       <p className="mt-4 text-textLight text-mini self-start">
         No Cost EMI on all major credit cards & No cost Cardless EMI* 7-day money back Guarantee
       </p>
-    </div>
-    <div className="absolute right-1 z-0">
-      <div className="relative top-9 right-9">
-        <Image src={BlurIcon} />
-      </div>
     </div>
   </div>
 );

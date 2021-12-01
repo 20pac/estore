@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 
+import Image from "next/image";
+
+import MinusIcon from "@public/assets/minus-icon.svg";
+import PlusIcon from "@public/assets/plus-icon.svg";
+
 const Accordion = ({ question, answer }: { question: string; answer: string }) => {
   const [expanded, setExpanded] = useState(false);
 
@@ -7,14 +12,14 @@ const Accordion = ({ question, answer }: { question: string; answer: string }) =
     <div className="border-b cursor-pointer" onClick={() => setExpanded((expanded) => !expanded)}>
       <div className="py-4 md:py-6 flex justify-between items-center">
         <p className="text-mini md:text-extraSmall font-bold pr-2">{question}</p>
-        <div className="text-superMini flex items-center justify-center rounded-full bg-blue text-white">
+        <div className="text-superMini flex items-center justify-center rounded-full text-white">
           <button
-            className="md:w-4 md:h-4 w-3 h-3 flex items-center justify-center rounded-full bg-blue text-white md:text-extraSmall text-mini"
+            className="md:w-4 md:h-4 w-3 h-3 flex items-center justify-center rounded-full text-white md:text-extraSmall text-mini"
             onClick={(e) => {
               e.stopPropagation();
               setExpanded((expanded) => !expanded);
             }}>
-            {expanded ? "-" : "+"}
+            {expanded ? <Image src={MinusIcon} /> : <Image src={PlusIcon} />}
           </button>
         </div>
       </div>
@@ -47,16 +52,18 @@ const Faqs = () => {
       />
       <Accordion
         question="4. Can I cancel or apply for a refund after payment?"
-        answer="Haven't all of our schools and colleges till date been a community, our best friends are from our schools and colleges we attended? We all start with the same purpose (degree), the same group of people (cohort) and have a fixed time duration to complete courses. Online cohort-based courses have a community component built-in which helps them drive a superior learning experience, new connections and friendships for participants which could potentially unlock new opportunities for them."
+        answer="If you’re not happy with the course within the first 7 days, you can request a full refund."
       />
       <Accordion
         question="5. Does this course guarantee me a job?"
-        answer="Haven't all of our schools and colleges till date been a community, our best friends are from our schools and colleges we attended? We all start with the same purpose (degree), the same group of people (cohort) and have a fixed time duration to complete courses. Online cohort-based courses have a community component built-in which helps them drive a superior learning experience, new connections and friendships for participants which could potentially unlock new opportunities for them."
+        answer="Nope. The training and community is designed to help you achieve your goals but we can't guarantee success. However you will have our lifetime support to keep upskilling and confidently apply for internships, freelance and full-time roles."
       />
+
       <Accordion
         question="6. How are the sessions conducted?"
-        answer="Haven't all of our schools and colleges till date been a community, our best friends are from our schools and colleges we attended? We all start with the same purpose (degree), the same group of people (cohort) and have a fixed time duration to complete courses. Online cohort-based courses have a community component built-in which helps them drive a superior learning experience, new connections and friendships for participants which could potentially unlock new opportunities for them."
+        answer="All live sessions will be conducted on Zoom. Beyond that, we will conduct activities like Q&A, mentor conversations etc which are optional for you participate in."
       />
+
       <Accordion
         question="7. What are the payment options available?"
         answer="Haven't all of our schools and colleges till date been a community, our best friends are from our schools and colleges we attended? We all start with the same purpose (degree), the same group of people (cohort) and have a fixed time duration to complete courses. Online cohort-based courses have a community component built-in which helps them drive a superior learning experience, new connections and friendships for participants which could potentially unlock new opportunities for them."

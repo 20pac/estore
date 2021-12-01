@@ -3,19 +3,19 @@ import React from "react";
 import Image from "next/image";
 
 import BlurGraphic from "@public/assets/blur-1.svg";
-import LaptopGraphic from "@public/assets/laptop-graphic.svg";
+import LaptopGraphic from "@public/assets/hero.gif";
 
 export const HeroSection = () => {
   return (
     <div className="mt-10 flex flex-row items-center justify-between">
       <div className="overflow-visible">
-        <h1 className="font-bold 1440:text-largest xl:text-54 text-48">
+        <h1 className="font-bold 1440:text-largest xl:text-54 text-larger">
           Learn{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-br from-three to-four">
             android development
           </span>{" "}
         </h1>
-        <h1 className="font-bold 1440:text-largest xl:text-54 text-48">from industry experts</h1>
+        <h1 className="font-bold 1440:text-largest xl:text-54 text-larger">from industry experts</h1>
         <p className="italic 1440:text-large xl:text-medium font-light text-24 my-6">
           Next cohort starts 3rd Jan 2022.
         </p>

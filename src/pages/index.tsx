@@ -18,6 +18,7 @@ import {
   OnlineCourseSuckSectionMobile,
   PricingSection,
   PricingSectionMobile,
+  TestimonialsSection,
   WhatBuild,
   WhyCbcSection,
   WhyCbcSectionMobile,
@@ -45,7 +46,7 @@ const Home: NextPage = () => {
           <WhyCbcSectionMobile />
           <LearningJourneyMobile />
           <PricingSectionMobile />
-          {/*<TestimonialsSection />*/}
+          <TestimonialsSection />
           <NewCohortSection />
           <InvestorsSection />
           <Faqs />
@@ -77,7 +78,7 @@ const Home: NextPage = () => {
           <WhatBuild />
           <LearningJourney />
           <PricingSection />
-          {/*<TestimonialsSection />*/}
+          <TestimonialsSection />
           <NewCohortSection />
           <InvestorsSection />
           <Faqs />

@@ -1,19 +1,11 @@
 import "@src/styles.css";
 
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 
 import { AppProps } from "next/app";
 import Head from "next/head";
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
-  useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector("#jss-server-side");
-    if (jssStyles) {
-      jssStyles?.parentElement?.removeChild(jssStyles);
-    }
-  }, []);
-
   return (
     <>
       <Head>

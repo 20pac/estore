@@ -9,4 +9,5 @@ export { OnlineCoursesSuckSection, OnlineCourseSuckSectionMobile } from "./onlin
 export { PricingSection, PricingSectionMobile } from "./pricing-section";
 export { default as TestimonialsSection } from "./testimonials-section";
 export { WhatBuild, WhatBuildMobile } from "./what-build";
+export { WhatToExpectSection, WhatToExpectSectionMobile } from "./what-to-expect-section";
 export { WhyCbcSection, WhyCbcSectionMobile } from "./why-cbc-section";

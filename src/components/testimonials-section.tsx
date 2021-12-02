@@ -21,12 +21,12 @@ type TestimonialCardProps = {
 };
 
 const TestimonialCard = ({ text, name, role, image }: TestimonialCardProps) => (
-  <div className="p-4 sm:max-w-screen-270 xl:max-w-screen-md h-12 w-10 md:h-13 xl:h-auto lg:w-400 border rounded-xl flex mr-4 flex-col items-start">
+  <div className="p-4 sm:max-w-screen-270 xl:max-w-screen-md h-12 w-10 md:h-13 xl:h-12 lg:w-11 border rounded-xl flex mr-4 flex-col items-start">
     <div className="rounded-full w-7 h-7 md:w-8 md:h-8 mb-4">
       <Image src={image} />
     </div>
     <p className="text-mini md:text-extraSmall leading-body text-justify">{text}</p>
-    <p className="mt-4 text-mini md:text-extraSmall font-medium">{name}</p>
+    <p className="mt-4 text-mini md:text-extraSmall font-medium mt-auto">{name}</p>
     <p className="text-textLight text-mini md:text-extraSmall">{role}</p>
   </div>
 );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -24,13 +24,20 @@ import {
   TestimonialsSection,
   WhatBuild,
   WhatBuildMobile,
+  WhatToExpectSection,
+  WhatToExpectSectionMobile,
   WhyCbcSection,
   WhyCbcSectionMobile,
 } from "@src/components";
+import { captureEvent } from "@src/utils/firebase";
 
 import { Media, MediaContextProvider } from "../utils/media";
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    captureEvent("view_landing_page");
+  }, []);
+
   return (
     <MediaContextProvider>
       <Media lessThan="md">
@@ -45,12 +52,13 @@ const Home: NextPage = () => {
               </h2>
             </div>
             <button
-              onClick={() =>
+              onClick={() => {
+                captureEvent("clicked_register_button");
                 window.open(
                   "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
                   "_blank",
-                )
-              }
+                );
+              }}
               className="shadow-xl text-mini py-2 px-3 text-white rounded-lg bg-gradient-to-r from-two to-one">
               Register now
             </button>
@@ -61,6 +69,7 @@ const Home: NextPage = () => {
           <OnlineCourseSuckSectionMobile />
           <WhyCbcSectionMobile />
           <WhatBuildMobile />
+          <WhatToExpectSectionMobile />
           <LearningJourneyMobile />
           <PricingSectionMobile />
           <TestimonialsSection />
@@ -77,7 +86,8 @@ const Home: NextPage = () => {
               </h2>
             </div>
             <p className="text-small text-blue mt-4 text-extraSmall">Invest in your career.</p>
-            <p className="my-6 text-mini">Copyright © 2021 Worldschool. All rights reserved.</p>
+            <p className="mt-6 mb-2 text-mini">Contact us on +91 86005 4884</p>
+            <p className="mb-6 text-mini">Copyright © 2021 Worldschool. All rights reserved.</p>
           </div>
         </div>
       </Media>
@@ -94,12 +104,13 @@ const Home: NextPage = () => {
               </h2>
             </div>
             <button
-              onClick={() =>
+              onClick={() => {
+                captureEvent("clicked_register_button");
                 window.open(
                   "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
                   "_blank",
-                )
-              }
+                );
+              }}
               className="text-extraSmall py-3 px-5 text-white rounded-lg bg-gradient-to-r from-two to-one">
               Register now
             </button>
@@ -110,6 +121,7 @@ const Home: NextPage = () => {
           <OnlineCoursesSuckSection />
           <WhyCbcSection />
           <WhatBuild />
+          <WhatToExpectSection />
           <LearningJourney />
           <PricingSection />
           <TestimonialsSection />
@@ -126,7 +138,8 @@ const Home: NextPage = () => {
               </h2>
             </div>
             <p className="text-small mt-5 text-blue text-sixteen">Invest in your career.</p>
-            <p className="my-9 text-extraSmall">Copyright © 2021 Worldschool. All rights reserved.</p>
+            <p className="mt-9 mb-3 text-extraSmall">Contact us on +91 86005 4884</p>
+            <p className="mb-9 text-extraSmall">Copyright © 2021 Worldschool. All rights reserved.</p>
           </div>
         </div>
       </Media>

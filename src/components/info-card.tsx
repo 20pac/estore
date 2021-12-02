@@ -9,7 +9,6 @@ type InfoCardProps = {
 };
 
 export const InfoCard = ({ info, icon, heading }: InfoCardProps) => {
-  console.log(icon);
   return (
     <div className="w-11 h-10 1440:w-400 1440:h-320 flex">
       <div className="flex-1 p-4 1440:p-6 border rounded-lg">

@@ -8,6 +8,8 @@ import AshishImage from "@public/assets/ashish.jpeg";
 import CheckmarkIcon from "@public/assets/chemark-icon.svg";
 import LinkedinIcon from "@public/assets/linkedin-icon.svg";
 
+import { captureEvent } from "@src/utils/firebase";
+
 export const InstructorsSection = () => {
   return (
     <div className="flex flex-row mt-10 items-center">
@@ -97,12 +99,13 @@ export const InstructorsSection = () => {
           </div>
         </div>
         <button
-          onClick={() =>
+          onClick={() => {
+            captureEvent("clicked_register_button");
             window.open(
               "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
               "_blank",
-            )
-          }
+            );
+          }}
           className="text-extraSmall py-3 px-5 text-white rounded-lg bg-gradient-to-r from-two to-one">
           Register now
         </button>
@@ -199,12 +202,13 @@ export const InstructorsSectionMobile = () => (
         </li>
       </ul>
       <button
-        onClick={() =>
+        onClick={() => {
+          captureEvent("clicked_register_button");
           window.open(
             "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
             "_blank",
-          )
-        }
+          );
+        }}
         className="mt-5 shadow-xl text-mini py-2 px-3 text-white rounded-lg bg-gradient-to-r from-two to-one">
         Register now
       </button>

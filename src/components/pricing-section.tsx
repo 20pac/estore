@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import CheckmarkIcon from "@public/assets/chemark-icon.svg";
 
+import { captureEvent } from "@src/utils/firebase";
+
 export const PricingSection = () => (
   <div className="flex flex-col items-center mt-10">
     <h1 className="font-bold 1440:text-largest xl:text-54 text-48">
@@ -36,12 +38,13 @@ export const PricingSection = () => (
             </li>
           </ul>
           <button
-            onClick={() =>
+            onClick={() => {
+              captureEvent("clicked_register_button");
               window.open(
                 "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
                 "_blank",
-              )
-            }
+              );
+            }}
             className="mt-6 text-extraSmall py-3 px-5 text-white rounded-lg bg-gradient-to-r from-two to-one">
             Register now
           </button>
@@ -102,12 +105,13 @@ export const PricingSectionMobile = () => (
             </div>
           </div>
           <button
-            onClick={() =>
+            onClick={() => {
+              captureEvent("clicked_register_button");
               window.open(
                 "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
                 "_blank",
-              )
-            }
+              );
+            }}
             className="mt-6 shadow-xl text-mini py-2 px-3 text-white rounded-lg bg-gradient-to-r from-two to-one">
             Register now
           </button>

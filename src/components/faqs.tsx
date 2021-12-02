@@ -44,7 +44,7 @@ const Faqs = () => {
       />
       <Accordion
         question="2. Do I have to attend all of the live sessions in real-time?"
-        answer="I strongly recommend you make time for live sessions so you can ask questions directly and make the most out of it. But if you are unable to attend a live session due to unavoidable circumstances, you can always access the recording of the session that you missed."
+        answer="We strongly recommend you make time for live sessions so you can ask questions directly and make the most out of it. But if you are unable to attend a live session due to unavoidable circumstances, you can always access the recording of the session that you missed."
       />
       <Accordion
         question="3. Why learn with a community for an online course?"

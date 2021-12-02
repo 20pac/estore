@@ -5,6 +5,8 @@ import Image from "next/image";
 import BlurGraphic from "@public/assets/blur-1.svg";
 import LaptopGraphic from "@public/assets/hero.gif";
 
+import { captureEvent } from "@src/utils/firebase";
+
 export const HeroSection = () => {
   return (
     <div className="mt-10 flex flex-row items-center justify-between">
@@ -23,12 +25,13 @@ export const HeroSection = () => {
           <Image src={BlurGraphic} className="absoluteImage" />
         </div>
         <button
-          onClick={() =>
+          onClick={() => {
+            captureEvent("clicked_register_button");
             window.open(
               "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
               "_blank",
-            )
-          }
+            );
+          }}
           className="text-extraSmall py-3 px-5 text-white rounded-lg bg-gradient-to-r from-two to-one">
           Register now
         </button>
@@ -58,12 +61,13 @@ export const HeroSectionMobile = () => {
         </div>
         <p className="italic text-extraSmall my-5">Next cohort starts 8th Jan 2022.</p>
         <button
-          onClick={() =>
+          onClick={() => {
+            captureEvent("clicked_register_button");
             window.open(
               "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
               "_blank",
-            )
-          }
+            );
+          }}
           className="shadow-xl text-mini py-2 px-3 text-white rounded-lg bg-gradient-to-r from-two to-one">
           Register now
         </button>

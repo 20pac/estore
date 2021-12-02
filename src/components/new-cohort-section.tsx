@@ -1,5 +1,7 @@
 import React from "react";
 
+import { captureEvent } from "@src/utils/firebase";
+
 const NewCohortSection = () => (
   <div className="flex flex-col items-center mt-8 md:mt-10">
     <div
@@ -13,12 +15,13 @@ const NewCohortSection = () => (
         build
       </p>
       <button
-        onClick={() =>
+        onClick={() => {
+          captureEvent("clicked_register_button");
           window.open(
             "https://docs.google.com/forms/d/e/1FAIpQLSc-nLb052SGrlsDUWw8-n5moVrpfwgvsX2QNPCZWSEYMfhT5w/viewform",
             "_blank",
-          )
-        }
+          );
+        }}
         className="self-start bg-white px-3 py-2 md:px-4 md:py-3 text-blue rounded-md text-mini md:text-extraSmall">
         Do it already!
       </button>

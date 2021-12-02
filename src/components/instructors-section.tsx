@@ -20,7 +20,7 @@ export const InstructorsSection = () => {
               <div className="rounded my-2 relative">
                 <div className="absolute bg-twenty w-8 h-150 xl:w-8 xl:h-180 -left-4 -top-6 xl:-left-4 xl:-top-4 rounded-xl" />
                 <div className="w-9 h-9 xl:w-180 xl:h-180">
-                  <Image src={AnanyaImage} className="rounded-xl" />
+                  <Image priority src={AnanyaImage} className="rounded-xl" />
                 </div>
               </div>
             </div>
@@ -28,7 +28,7 @@ export const InstructorsSection = () => {
             <p className="text-mini self-start italic text-text">Founding engineer, Studyroom</p>
             <div className="flex flex-row gap-2 mt-3">
               <button onClick={() => window.open("https://www.linkedin.com/in/ananya-singh-115456149/", "_blank")}>
-                <Image src={LinkedinIcon} />
+                <Image priority src={LinkedinIcon} />
               </button>
             </div>
           </div>
@@ -37,7 +37,7 @@ export const InstructorsSection = () => {
               <div className="rounded my-2 relative">
                 <div className="absolute bg-twentyTwo w-8 h-150 xl:w-8 xl:h-180 -left-4 -top-6 xl:-left-4 xl:-top-4 rounded-xl" />
                 <div className="w-9 h-9 xl:w-180 xl:h-180">
-                  <Image src={AshishImage} className="rounded-xl" />
+                  <Image priority src={AshishImage} className="rounded-xl" />
                 </div>
               </div>
             </div>
@@ -45,7 +45,7 @@ export const InstructorsSection = () => {
             <p className="text-mini self-start italic text-text">Founder, Studyroom, IIT</p>
             <div className="flex flex-row gap-2 mt-3">
               <button onClick={() => window.open("https://www.linkedin.com/in/ashishiitkgp/", "_blank")}>
-                <Image src={LinkedinIcon} />
+                <Image priority src={LinkedinIcon} />
               </button>
             </div>
           </div>
@@ -56,7 +56,7 @@ export const InstructorsSection = () => {
               <div className="rounded my-2 relative">
                 <div className="absolute bg-twentyOne w-8 h-150 xl:w-8 xl:h-180 -left-4 -top-6 xl:-left-4 xl:-top-4 rounded-xl" />
                 <div className="w-9 h-9 xl:w-180 xl:h-180">
-                  <Image src={AbhinavImage} className="rounded-xl" />
+                  <Image priority src={AbhinavImage} className="rounded-xl" />
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ export const InstructorsSection = () => {
             <p className="text-mini self-start italic text-text">CTO, Studyroom, Unacademy, IIT BHU</p>
             <div className="flex flex-row gap-2 mt-3">
               <button onClick={() => window.open("https://www.linkedin.com/in/abhigupta768/", "_blank")}>
-                <Image src={LinkedinIcon} />
+                <Image priority src={LinkedinIcon} />
               </button>
             </div>
           </div>
@@ -83,19 +83,19 @@ export const InstructorsSection = () => {
         </p>
         <div>
           <div className="text-extraSmall xl:text-small mb-3 xl:mb-5 flex items-center">
-            <Image src={CheckmarkIcon} width={24} />{" "}
+            <Image priority src={CheckmarkIcon} width={24} />{" "}
             <span className="ml-4">Learn from and interact with industry experts</span>
           </div>
           <div className="text-extraSmall xl:text-small mb-3 xl:mb-5 flex items-center">
-            <Image src={CheckmarkIcon} width={24} />{" "}
+            <Image priority src={CheckmarkIcon} width={24} />{" "}
             <span className="ml-4">Build a working relationship with your instructor</span>
           </div>
           <div className="text-extraSmall xl:text-small mb-3 xl:mb-5 flex items-center">
-            <Image src={CheckmarkIcon} width={24} />{" "}
+            <Image priority src={CheckmarkIcon} width={24} />{" "}
             <span className="ml-4">Receive feedback on assignments and projects</span>
           </div>
           <div className="text-extraSmall xl:text-small mb-5 flex items-center">
-            <Image src={CheckmarkIcon} width={24} /> <span className="ml-4">You want to be future ready</span>
+            <Image priority src={CheckmarkIcon} width={24} /> <span className="ml-4">You want to be future ready</span>
           </div>
         </div>
         <button
@@ -132,7 +132,7 @@ export const InstructorsSectionMobile = () => (
               <div className="rounded my-2 relative">
                 <div className="absolute bg-twenty w-8 h-9 -left-3 -top-5 rounded-xl" />
                 <div className="w-9 h-9 xl:w-180 xl:h-180">
-                  <Image src={AnanyaImage} className="rounded-xl" />
+                  <Image priority src={AnanyaImage} className="rounded-xl" />
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@ export const InstructorsSectionMobile = () => (
             <p className="text-superMini self-start italic text-text">Founding engineer, Studyroom</p>
             <div className="flex flex-row gap-2 mt-3">
               <button onClick={() => window.open("https://www.linkedin.com/in/ananya-singh-115456149/", "_blank")}>
-                <Image src={LinkedinIcon} />
+                <Image priority src={LinkedinIcon} />
               </button>
             </div>
           </div>
@@ -150,7 +150,7 @@ export const InstructorsSectionMobile = () => (
             <div className="rounded my-2 relative">
               <div className="absolute bg-twentyTwo w-8 h-9 -left-3 -top-5 rounded-xl" />
               <div className="w-9 h-9 xl:w-180 xl:h-180">
-                <Image src={AshishImage} className="rounded-xl" />
+                <Image priority src={AshishImage} className="rounded-xl" />
               </div>
             </div>
           </div>
@@ -158,7 +158,7 @@ export const InstructorsSectionMobile = () => (
           <p className="text-superMini self-start italic text-text">Founder, Studyroom, IIT</p>
           <div className="flex flex-row gap-2 mt-3">
             <button onClick={() => window.open("https://www.linkedin.com/in/ashishiitkgp/", "_blank")}>
-              <Image src={LinkedinIcon} />
+              <Image priority src={LinkedinIcon} />
             </button>
           </div>
         </div>
@@ -169,7 +169,7 @@ export const InstructorsSectionMobile = () => (
             <div className="rounded my-2 relative">
               <div className="absolute bg-twentyOne w-8 h-9 -left-3 -top-5 rounded-xl" />
               <div className="w-9 h-9 xl:w-180 xl:h-180">
-                <Image src={AbhinavImage} className="rounded-xl" />
+                <Image priority src={AbhinavImage} className="rounded-xl" />
               </div>
             </div>
           </div>
@@ -177,7 +177,7 @@ export const InstructorsSectionMobile = () => (
           <p className="text-superMini self-start italic text-text">CTO, Studyroom, Unacademy, IIT BHU</p>
           <div className="flex flex-row gap-2 mt-3">
             <button onClick={() => window.open("https://www.linkedin.com/in/abhigupta768/", "_blank")}>
-              <Image src={LinkedinIcon} />
+              <Image priority src={LinkedinIcon} />
             </button>
           </div>
         </div>
@@ -186,19 +186,19 @@ export const InstructorsSectionMobile = () => (
     <div className="mt-5">
       <ul>
         <li className="text-mini mb-3 flex items-center">
-          <Image src={CheckmarkIcon} width={15} />{" "}
+          <Image priority src={CheckmarkIcon} width={15} />{" "}
           <span className="ml-3">Learn from and interact with industry experts</span>
         </li>
         <li className="text-mini mb-3 flex items-center">
-          <Image src={CheckmarkIcon} width={15} />{" "}
+          <Image priority src={CheckmarkIcon} width={15} />{" "}
           <span className="ml-3">Build a working relationship with your instructor</span>
         </li>
         <li className="text-mini mb-3 flex items-center">
-          <Image src={CheckmarkIcon} width={15} />{" "}
+          <Image priority src={CheckmarkIcon} width={15} />{" "}
           <span className="ml-3">Receive feedback on assignments and projects</span>
         </li>
         <li className="text-mini mb-3 flex items-center">
-          <Image src={CheckmarkIcon} width={15} /> <span className="ml-3">You want to be future ready</span>
+          <Image priority src={CheckmarkIcon} width={15} /> <span className="ml-3">You want to be future ready</span>
         </li>
       </ul>
       <button

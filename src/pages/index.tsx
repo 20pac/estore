@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import Logo from "@public/assets/logo.svg";
 
@@ -34,6 +35,8 @@ import { captureEvent } from "@src/utils/firebase";
 import { Media, MediaContextProvider } from "../utils/media";
 
 const Home: NextPage = () => {
+  const router = useRouter();
+
   useEffect(() => {
     captureEvent("view_landing_page");
   }, []);
@@ -45,7 +48,7 @@ const Home: NextPage = () => {
           <div className="flex flex-row justify-between items-center">
             <div className="flex flex-row items-center">
               <div className="w-5">
-                <Image src={Logo} />
+                <Image priority src={Logo} />
               </div>
               <h2 className="text-transparent text-extraSmall lg:text-large font-bold bg-clip-text bg-gradient-to-br from-three to-four">
                 Worldschool
@@ -79,7 +82,7 @@ const Home: NextPage = () => {
           <div className="mt-8">
             <div className="flex flex-row items-center">
               <div className="w-5">
-                <Image src={Logo} />
+                <Image priority src={Logo} />
               </div>
               <h2 className="text-transparent text-extraSmall lg:text-large font-bold bg-clip-text bg-gradient-to-br from-three to-four">
                 Worldschool
@@ -87,6 +90,9 @@ const Home: NextPage = () => {
             </div>
             <p className="text-small text-blue mt-4 text-extraSmall">Invest in your career.</p>
             <p className="mt-6 mb-2 text-mini">Contact us on +91 86005 4884</p>
+            <p className="mt-6 mb-2 text-mini underline text-blue" onClick={() => router.push("/privacy")}>
+              Privacy Policy
+            </p>
             <p className="mb-6 text-mini">Copyright © 2021 Worldschool. All rights reserved.</p>
           </div>
         </div>
@@ -139,6 +145,11 @@ const Home: NextPage = () => {
             </div>
             <p className="text-small mt-5 text-blue text-sixteen">Invest in your career.</p>
             <p className="mt-9 mb-3 text-extraSmall">Contact us on +91 86005 4884</p>
+            <p
+              className="mt-9 mb-2 text-extraSmall underline text-blue cursor-pointer"
+              onClick={() => router.push("/privacy")}>
+              Privacy Policy
+            </p>
             <p className="mb-9 text-extraSmall">Copyright © 2021 Worldschool. All rights reserved.</p>
           </div>
         </div>
